@@ -6,29 +6,32 @@ img {
 p {
   font-size: 30px;
   color: #1fd662;
-  text-align: justify;
-  margin-left: 40px;
+  margin-left: 10%;
 }
 
 .container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: space-between;
-  margin-left: 150px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
 }
 
 .youBotFilm {
   width: 30%;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
 
 /* BUTTON */
 button {
-  margin-left: 30px;
-
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 5%;
   justify-self: center;
   font-size: 1.2rem;
   font-weight: 600;
@@ -40,9 +43,17 @@ button {
   transition: all 100ms ease-in-out;
   box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.1);
   margin-bottom: 70px;
+  margin-left: 15%;
 }
 
 button:hover {
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 990px) {
+  p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
 }
